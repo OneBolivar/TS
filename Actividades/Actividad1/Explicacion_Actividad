@@ -105,23 +105,3 @@ type ProductCategory =
   | "food"
   | "home";
 ```
-### Preguntas de análisis
-
-1. ¿Qué diferencia existe entre utilizar string y utilizar ProductCategory?
-
-2. ¿Qué sucede al intentar asignar la categoría "vehicles" a una variable de tipo ProductCategory?
-
-3. ¿Por qué puede ser útil crear tipos como ProductId y SupplierId si ambos están basados en number?
-
-4. ¿Qué ventaja aporta utilizar nombres como Quantity y Price en lugar de escribir directamente number?
-
-Próximos pasos de la etapa
-
-Después de definir los tipos básicos y las categorías, se continuará con:
-
-La estructura de un producto.
-La estructura de un proveedor.
-Propiedades obligatorias y opcionales.
-Propiedades que no deben modificarse.
-Listas de productos y proveedores.
-Representación de datos mediante tuplas.

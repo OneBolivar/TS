@@ -1,0 +1,1 @@
+const nombre = prompt("¿Cómo te llamas?");
