@@ -1,235 +1,257 @@
 export interface Movie {
-    id : number,
-    title : string,
-    year : number,
-    rating : number,
-    poster : string,
-    genre : string,
+    id: number,
+    titulo: string,
+    anio: number,
+    genero : string,
     director : string,
-    duration : number,
-    description : string 
+    duracion : number,
+    puntuacion : number,
+    imagen : string,
+    descripcion : string
 }
 
 export const movies = [
+
     {
         id: 1,
-        title: "Inception",
-        year: 2010,
-        rating: 8.8,
-        poster: "https://unsplash.com",
-        genre: "Ciencia Ficción",
-        director: "Christopher Nolan",
-        duration: 148,
-        description: "Un ladrón que roba secretos corporativos a través del uso de la tecnología de compartir sueños."
+        titulo: "The Shawshank Redemption",
+        anio: 1994,
+        genero: "Drama",
+        director: "Frank Darabont",
+        duracion: 142,
+        puntuacion: 9.3,
+        imagen: "https://picsum.photos/seed/shawshank/400/600",
+        descripcion:
+            "Un banquero condenado injustamente encuentra esperanza y amistad durante su estancia en prisión."
     },
     {
         id: 2,
-        title: "The Shawshank Redemption",
-        year: 1994,
-        rating: 9.3,
-        poster: "https://unsplash.com",
-        genre: "Drama",
-        director: "Frank Darabont",
-        duration: 142,
-        description: "Dos hombres encarcelados entablan una profunda amistad a lo largo de los años, encontrando consuelo y redención eventual."
+        titulo: "The Godfather",
+        anio: 1972,
+        genero: "Crimen",
+        director: "Francis Ford Coppola",
+        duracion: 175,
+        puntuacion: 9.2,
+        imagen: "https://picsum.photos/seed/godfather/400/600",
+        descripcion:
+            "La historia de una poderosa familia de la mafia y el ascenso de un nuevo líder dentro de ella."
     },
     {
         id: 3,
-        title: "The Godfather",
-        year: 1972,
-        rating: 9.2,
-        poster: "https://unsplash.com",
-        genre: "Crimen",
-        director: "Francis Ford Coppola",
-        duration: 175,
-        description: "El envejecido patriarca de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su reacio hijo."
+        titulo: "The Dark Knight",
+        anio: 2008,
+        genero: "Acción",
+        director: "Christopher Nolan",
+        duracion: 152,
+        puntuacion: 9.0,
+        imagen: "https://picsum.photos/seed/darkknight/400/600",
+        descripcion:
+            "Batman se enfrenta a un criminal que busca sumir a Ciudad Gótica en el caos."
     },
     {
         id: 4,
-        title: "The Dark Knight",
-        year: 2008,
-        rating: 9.0,
-        poster: "https://unsplash.com",
-        genre: "Acción",
-        director: "Christopher Nolan",
-        duration: 152,
-        description: "Cuando la amenaza conocida como el Joker causa estragos y caos en Gotham, Batman debe aceptar una de las mayores pruebas psicológicas y físicas."
+        titulo: "Pulp Fiction",
+        anio: 1994,
+        genero: "Crimen",
+        director: "Quentin Tarantino",
+        duracion: 154,
+        puntuacion: 8.9,
+        imagen: "https://picsum.photos/seed/pulpfiction/400/600",
+        descripcion:
+            "Varias historias criminales se conectan de manera inesperada en Los Ángeles."
     },
     {
         id: 5,
-        title: "Pulp Fiction",
-        year: 1994,
-        rating: 8.9,
-        poster: "https://unsplash.com",
-        genre: "Crimen",
-        director: "Quentin Tarantino",
-        duration: 154,
-        description: "Las vidas de dos asesinos a sueldo, un boxeador, la esposa de un gángster y un par de bandidos se entrelazan en cuatro historias de violencia y redención."
+        titulo: "Forrest Gump",
+        anio: 1994,
+        genero: "Drama",
+        director: "Robert Zemeckis",
+        duracion: 142,
+        puntuacion: 8.8,
+        imagen: "https://picsum.photos/seed/forrestgump/400/600",
+        descripcion:
+            "Un hombre de gran corazón participa accidentalmente en importantes acontecimientos históricos."
     },
     {
         id: 6,
-        title: "Schindler's List",
-        year: 1993,
-        rating: 9.0,
-        poster: "https://unsplash.com",
-        genre: "Biografía",
-        director: "Steven Spielberg",
-        duration: 195,
-        description: "En la Polonia ocupada por los alemanes durante la Segunda Guerra Mundial, el industrial Oskar Schindler se preocupa por sus trabajadores judíos."
+        titulo: "Inception",
+        anio: 2010,
+        genero: "Ciencia ficción",
+        director: "Christopher Nolan",
+        duracion: 148,
+        puntuacion: 8.8,
+        imagen: "https://picsum.photos/seed/inception/400/600",
+        descripcion:
+            "Un equipo especializado entra en los sueños para implantar una idea en la mente de una persona."
     },
     {
         id: 7,
-        title: "The Lord of the Rings: The Return of the King",
-        year: 2003,
-        rating: 9.0,
-        poster: "https://unsplash.com",
-        genre: "Fantasía",
-        director: "Peter Jackson",
-        duration: 201,
-        description: "Gandalf y Aragorn lideran el mundo de los hombres contra el ejército de Sauron para distorsionar su mirada de Frodo y Sam mientras se acercan al Monte del Destino."
+        titulo: "Fight Club",
+        anio: 1999,
+        genero: "Drama",
+        director: "David Fincher",
+        duracion: 139,
+        puntuacion: 8.8,
+        imagen: "https://picsum.photos/seed/fightclub/400/600",
+        descripcion:
+            "Un oficinista insatisfecho crea un club secreto junto a un misterioso vendedor de jabón."
     },
     {
         id: 8,
-        title: "Forrest Gump",
-        year: 1994,
-        rating: 8.8,
-        poster: "https://unsplash.com",
-        genre: "Romance",
-        director: "Robert Zemeckis",
-        duration: 142,
-        description: "Las presidencias de Kennedy y Johnson, los eventos de Vietnam y Watergate, se desarrollan desde la perspectiva de un hombre de Alabama con un coeficiente intelectual de 75."
+        titulo: "The Matrix",
+        anio: 1999,
+        genero: "Ciencia ficción",
+        director: "Lana y Lilly Wachowski",
+        duracion: 136,
+        puntuacion: 8.7,
+        imagen: "https://picsum.photos/seed/matrix/400/600",
+        descripcion:
+            "Un programador descubre que el mundo en el que vive es una simulación controlada por máquinas."
     },
     {
         id: 9,
-        title: "Fight Club",
-        year: 1999,
-        rating: 8.8,
-        poster: "https://unsplash.com",
-        genre: "Drama",
-        director: "David Fincher",
-        duration: 139,
-        description: "Un oficinista insomne y un desinteresado fabricante de jabones forman un club de lucha clandestino que evoluciona en algo mucho más grande."
+        titulo: "Goodfellas",
+        anio: 1990,
+        genero: "Crimen",
+        director: "Martin Scorsese",
+        duracion: 145,
+        puntuacion: 8.7,
+        imagen: "https://picsum.photos/seed/goodfellas/400/600",
+        descripcion:
+            "Un joven se introduce en el mundo del crimen organizado y conoce sus beneficios y consecuencias."
     },
     {
         id: 10,
-        title: "The Matrix",
-        year: 1999,
-        rating: 8.7,
-        poster: "https://unsplash.com",
-        genre: "Ciencia Ficción",
-        director: "Lana Wachowski, Lilly Wachowski",
-        duration: 136,
-        description: "Cuando un bello extraño lleva al hacker Neo a un inframundo inhóspito, descubre la terrible verdad: la vida que conoce es un engaño cibernético."
+        titulo: "Interstellar",
+        anio: 2014,
+        genero: "Ciencia ficción",
+        director: "Christopher Nolan",
+        duracion: 169,
+        puntuacion: 8.7,
+        imagen: "https://picsum.photos/seed/interstellar/400/600",
+        descripcion:
+            "Un grupo de astronautas viaja por el espacio en busca de un nuevo hogar para la humanidad."
     },
     {
         id: 11,
-        title: "Goodfellas",
-        year: 1990,
-        rating: 8.7,
-        poster: "https://unsplash.com",
-        genre: "Crimen",
-        director: "Martin Scorsese",
-        duration: 145,
-        description: "La historia de Henry Hill y su vida en la mafia, cubriendo su relación con su esposa Karen Hill y sus socios mafiosos Jimmy Conway y Tommy DeVito."
+        titulo: "Parasite",
+        anio: 2019,
+        genero: "Suspenso",
+        director: "Bong Joon-ho",
+        duracion: 132,
+        puntuacion: 8.5,
+        imagen: "https://picsum.photos/seed/parasite/400/600",
+        descripcion:
+            "Una familia con dificultades económicas comienza a trabajar para una familia adinerada."
     },
     {
         id: 12,
-        title: "One Flew Over the Cuckoo's Nest",
-        year: 1975,
-        rating: 8.7,
-        poster: "https://unsplash.com",
-        genre: "Drama",
-        director: "Milos Forman",
-        duration: 133,
-        description: "Un criminal de espíritu libre finge locura para ser trasladado a una institución mental, donde se rebela contra la opresiva enfermera jefa."
+        titulo: "Gladiator",
+        anio: 2000,
+        genero: "Acción",
+        director: "Ridley Scott",
+        duracion: 155,
+        puntuacion: 8.5,
+        imagen: "https://picsum.photos/seed/gladiator/400/600",
+        descripcion:
+            "Un general romano traicionado busca justicia mientras lucha como gladiador."
     },
     {
         id: 13,
-        title: "Seven",
-        year: 1995,
-        rating: 8.6,
-        poster: "https://unsplash.com",
-        genre: "Misterio",
-        director: "David Fincher",
-        duration: 127,
-        description: "Dos detectives, uno novato y otro a punto de retirarse, cazan a un asesino en serie que utiliza los siete pecados capitales como sus motivos."
+        titulo: "The Lion King",
+        anio: 1994,
+        genero: "Animación",
+        director: "Roger Allers y Rob Minkoff",
+        duracion: 88,
+        puntuacion: 8.5,
+        imagen: "https://picsum.photos/seed/lionking/400/600",
+        descripcion:
+            "Un joven león debe aceptar su destino y recuperar el reino que le pertenece."
     },
     {
         id: 14,
-        title: "Interstellar",
-        year: 2014,
-        rating: 8.6,
-        poster: "https://unsplash.com",
-        genre: "Ciencia Ficción",
-        director: "Christopher Nolan",
-        duration: 169,
-        description: "Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento por asegurar la supervivencia de la humanidad."
+        titulo: "Whiplash",
+        anio: 2014,
+        genero: "Drama",
+        director: "Damien Chazelle",
+        duracion: 106,
+        puntuacion: 8.5,
+        imagen: "https://picsum.photos/seed/whiplash/400/600",
+        descripcion:
+            "Un joven baterista se enfrenta a un exigente profesor que busca llevarlo al límite."
     },
     {
         id: 15,
-        title: "The Silence of the Lambs",
-        year: 1991,
-        rating: 8.6,
-        poster: "https://unsplash.com",
-        genre: "Suspenso",
-        director: "Jonathan Demme",
-        duration: 118,
-        description: "Una joven cadete del FBI debe recibir la ayuda de un asesino caníbal encarcelado para atrapar a otro asesino en serie que despelleja a sus víctimas."
+        titulo: "Back to the Future",
+        anio: 1985,
+        genero: "Aventura",
+        director: "Robert Zemeckis",
+        duracion: 116,
+        puntuacion: 8.5,
+        imagen: "https://picsum.photos/seed/backfuture/400/600",
+        descripcion:
+            "Un adolescente viaja accidentalmente al pasado en una máquina del tiempo."
     },
     {
         id: 16,
-        title: "Saving Private Ryan",
-        year: 1998,
-        rating: 8.6,
-        poster: "https://unsplash.com",
-        genre: "Bélico",
-        director: "Steven Spielberg",
-        duration: 169,
-        description: "Después del desembarco de Normandía, un grupo de soldados estadounidenses va detrás de las líneas enemigas para rescatar a un paracaidista."
+        titulo: "Spirited Away",
+        anio: 2001,
+        genero: "Animación",
+        director: "Hayao Miyazaki",
+        duracion: 125,
+        puntuacion: 8.6,
+        imagen: "https://picsum.photos/seed/spiritedaway/400/600",
+        descripcion:
+            "Una niña entra en un mundo mágico y debe encontrar la forma de salvar a sus padres."
     },
     {
         id: 17,
-        title: "Spirited Away",
-        year: 2001,
-        rating: 8.6,
-        poster: "https://unsplash.com",
-        genre: "Animación",
-        director: "Hayao Miyazaki",
-        duration: 125,
-        description: "Durante el traslado de su familia al suburbio, una niña de 10 años de edad deambula por un mundo gobernado por dioses, brujas y espíritus."
+        titulo: "Coco",
+        anio: 2017,
+        genero: "Animación",
+        director: "Lee Unkrich",
+        duracion: 105,
+        puntuacion: 8.4,
+        imagen: "https://picsum.photos/seed/coco/400/600",
+        descripcion:
+            "Un niño apasionado por la música viaja al mundo de los muertos para conocer su historia familiar."
     },
     {
         id: 18,
-        title: "The Green Mile",
-        year: 1999,
-        rating: 8.6,
-        poster: "https://unsplash.com",
-        genre: "Drama",
-        director: "Frank Darabont",
-        duration: 189,
-        description: "Las vidas de los guardias del corredor de la muerte se ven afectadas por uno de sus reclusos: un hombre negro acusado de asesinato que posee un don milagroso."
+        titulo: "Joker",
+        anio: 2019,
+        genero: "Drama",
+        director: "Todd Phillips",
+        duracion: 122,
+        puntuacion: 8.3,
+        imagen: "https://picsum.photos/seed/joker/400/600",
+        descripcion:
+            "Un hombre marginado por la sociedad comienza una transformación que causa caos en la ciudad."
     },
     {
         id: 19,
-        title: "Parasite",
-        year: 2019,
-        rating: 8.5,
-        poster: "https://unsplash.com",
-        genre: "Comedia Negra",
-        director: "Bong Joon Ho",
-        duration: 132,
-        description: "La codicia y la discriminación de clases amenazan la relación recién formada entre la adinerada familia Park y el clan Kim, que carece de recursos."
+        titulo: "Avengers: Endgame",
+        anio: 2019,
+        genero: "Acción",
+        director: "Anthony y Joe Russo",
+        duracion: 181,
+        puntuacion: 8.4,
+        imagen: "https://picsum.photos/seed/endgame/400/600",
+        descripcion:
+            "Los héroes sobrevivientes se reúnen para intentar revertir una tragedia universal."
     },
     {
         id: 20,
-        title: "Gladiator",
-        year: 2000,
-        rating: 8.5,
-        poster: "https://unsplash.com",
-        genre: "Acción",
-        director: "Ridley Scott",
-        duration: 155,
-        description: "Un ex general romano se propone vengarse del emperador corrupto que asesinó a su familia y lo envió a él a la esclavitud."
+        titulo: "The Truman Show",
+        anio: 1998,
+        genero: "Comedia dramática",
+        director: "Peter Weir",
+        duracion: 103,
+        puntuacion: 8.2,
+        imagen: "https://picsum.photos/seed/trumanshow/400/600",
+        descripcion:
+            "Un hombre comienza a sospechar que toda su vida forma parte de un programa de televisión."
     }
+
 ];
 
